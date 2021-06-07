@@ -15,7 +15,7 @@ Route::get('/supplier', [ SupplierController::class, 'index' ])->name('supplier'
 Route::get('/supplier/create', [ SupplierController::class, 'create' ])->name('supplier.create');
 
 
-/** 
+/** https://docs.google.com/presentation/d/1-0MuIQboCxLI3A1OevQQuDTDCTUoxk6N4sp0aPN_cX0/edit?usp=sharing
  * Save New supplier to Database
 */
 Route::post('/supplier/create/save', [ SupplierController::class, 'store' ])->name('supplier.create.save');
