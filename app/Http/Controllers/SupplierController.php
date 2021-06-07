@@ -8,7 +8,7 @@ use App\Models\Supplier;
 //facade
 use Redirect;
 
-class SuppliertController extends Controller
+class SupplierController extends Controller
 {
     //declare variable
     protected $request;
