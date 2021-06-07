@@ -17,12 +17,7 @@
   
     <div class="main-content">
         <div class="row">
-            <div class="col-3 sidebar">
-                @include('components.sidebar')
-            </div>
-            
-            <div class="col-3"></div>
-            <div class="col-9 b-light content">
+            <div class="col-12 b-light content" style="margin-top:0px; padding: 0 20px;">
                 @yield('content')
             </div>
         </div>

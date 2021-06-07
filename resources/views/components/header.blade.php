@@ -8,9 +8,9 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a href="/supplier" class=" text-black nav-link  @if($active=='supplier') active @endif">
-            Supplier
+            Supplier </a>
           </li>
-        </li> <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Storage</a>
         </li>
           </li> <li class="nav-item">
@@ -27,25 +27,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Returns</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Supplier</a></li>
-              <li><a class="dropdown-item" href="#">Storgage</a></li>
-                <li><a class="dropdown-item" href="#">Assets</a></li>
-                <li><a class="dropdown-item" href="#">Distribution</a></li>
-                <li><a class="dropdown-item" href="#">Transportation</a></li>
-                <li><a class="dropdown-item" href="#">Deliveries</a></li>
-                <li><a class="dropdown-item" href="#">Returns</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li>
         </ul>
         <form class="d-flex">
