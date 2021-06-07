@@ -17,7 +17,7 @@ class CreateStorageTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('building');
-            $table->integer('floor');
+            $table->string('floor');
             $table->integer('room');
             $table->string('cabinet');
             $table->softDeletes();

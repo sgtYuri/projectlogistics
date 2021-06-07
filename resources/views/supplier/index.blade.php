@@ -30,10 +30,10 @@
                                 <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Building</th> 
-                                    <th>Floor</th>
-                                    <th>Room</th> 
-                                    <th>Cabinet</th>
+                                    <th>Contact</th> 
+                                    <th>Address</th>
+                                    <th>Contact Person</th> 
+                                    <th>Category</th>
                                     <th>Action</th> 
                                 </tr>
                            

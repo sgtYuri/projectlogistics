@@ -8,7 +8,7 @@
                 <div class="card-body row p-5"> 
 
                     <div class="col-12">
-                        <h4>Edit Supplier</h4>
+                        <h4>Edit Storage</h4>
                     </div>
                     <div class="col-12">
                          {{-- Supplier Form--}}
@@ -17,29 +17,29 @@
 
                             {{-- Supplier Input Field --}}
                             <div class="col-md-12">
-                                <label for="department" class="form-label">Name</label>
-                                <input type="text" id="supplier" class="form-control" name="name" required value="{{ $data->name }}">
+                                <label for="storage" class="form-label">Name</label>
+                                <input type="text" id="storage" class="form-control" name="name" required value="{{ $data->name }}">
                             </div> 
                             <div class="col-md-12">
-                                <label for="department" class="form-label">Building</label>
-                                <input type="text" id="supplier" class="form-control" name="building" required value="{{ $data->building }}">
+                                <label for="storage" class="form-label">Building</label>
+                                <input type="text" id="storage" class="form-control" name="building" required value="{{ $data->building }}">
                             </div> 
                             <div class="col-md-12">
-                                <label for="department" class="form-label">Floor</label>
-                                <input type="text" id="supplier" class="form-control" name="floor" required value="{{ $data->floor }}">
+                                <label for="storage" class="form-label">Floor</label>
+                                <input type="text" id="storage" class="form-control" name="floor" required value="{{ $data->floor }}">
                             </div> 
                             <div class="col-md-12">
-                                <label for="department" class="form-label">Room</label>
-                                <input type="number" id="supplier" class="form-control" name="room" required value="{{ $data->room }}">
+                                <label for="storage" class="form-label">Room</label>
+                                <input type="number" id="storage" class="form-control" name="room" required value="{{ $data->room }}">
                             </div> 
                             <div class="col-md-12">
-                                <label for="department" class="form-label">Cabinet</label>
-                                <input type="text" id="supplier" class="form-control" name="cabinet" required value="{{ $data->cabinet }}">
+                                <label for="storage" class="form-label">Cabinet</label>
+                                <input type="text" id="storage" class="form-control" name="cabinet" required value="{{ $data->cabinet }}">
                             </div> 
                             
                             
                             
-                            {{-- End Supplier Input Field --}}
+                            {{-- End Storage Input Field --}}
                         
                             {{-- Submit and Cancel Button --}}
                             <div class="col-12">

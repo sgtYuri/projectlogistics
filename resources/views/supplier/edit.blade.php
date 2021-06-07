@@ -17,23 +17,23 @@
 
                             {{-- Supplier Input Field --}}
                             <div class="col-md-12">
-                                <label for="department" class="form-label">Name</label>
+                                <label for="supplier" class="form-label">Name</label>
                                 <input type="text" id="supplier" class="form-control" name="name" required value="{{ $data->name }}">
                             </div> 
                             <div class="col-md-12">
-                                <label for="department" class="form-label">Building</label>
-                                <input type="text" id="supplier" class="form-control" name="contact" required value="{{ $data->contact }}">
+                                <label for="supplier" class="form-label">Contact</label>
+                                <input type="number" id="supplier" class="form-control" name="contact" required value="{{ $data->contact }}">
                             </div> 
                             <div class="col-md-12">
-                                <label for="department" class="form-label">Floor</label>
+                                <label for="supplier" class="form-label">Address</label>                           
                                 <input type="text" id="supplier" class="form-control" name="address" required value="{{ $data->address }}">
                             </div> 
                             <div class="col-md-12">
-                                <label for="department" class="form-label">Room</label>
-                                <input type="number" id="supplier" class="form-control" name="contact_person" required value="{{ $data->contact_person }}">
+                                <label for="supplier" class="form-label">Contact_person</label>
+                                <input type="text" id="supplier" class="form-control" name="contact_person" required value="{{ $data->contact_person }}">
                             </div> 
                             <div class="col-md-12">
-                                <label for="department" class="form-label">Cabinet</label>
+                                <label for="supplier" class="form-label">Category</label>
                                 <input type="text" id="supplier" class="form-control" name="category" required value="{{ $data->category }}">
                             </div> 
                             

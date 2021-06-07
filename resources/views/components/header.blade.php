@@ -11,16 +11,20 @@
             Supplier </a>
           </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Storage</a>
+          <a href="/storage" class=" text-black nav-link  @if($active=='storage') active @endif">
+            Storage </a>
         </li>
-          </li> <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Assets</a>
-          </li>
+        <li class="nav-item">
+          <a href="/assets" class=" text-black nav-link  @if($active=='assets') active @endif">
+            Assets </a>
+        </li>
+        <li class="nav-item">
+          <a href="/distribution" class=" text-black nav-link  @if($active=='distribution') active @endif">
+            Distribution </a>
+        </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Distribution</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Transportation</a>
+            <a href="/transportation" class=" text-black nav-link  @if($active=='transportation') active @endif">
+              Transportation </a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Deliveries</a>

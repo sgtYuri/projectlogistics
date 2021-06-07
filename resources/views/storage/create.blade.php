@@ -1,6 +1,6 @@
-@php $active = 'supplier' @endphp
+@php $active = 'storage' @endphp
 @extends('layout.main')
-@section('title', 'Create Supplier')
+@section('title', 'Create Storage')
 @section('content')
     <div class="row align-items-center"> 
         <div class="col-12 mt-5">
@@ -8,7 +8,7 @@
                 <div class="card-body row p-5"> 
 
                     <div class="col-12">
-                        <h4>Create Supplier</h4>
+                        <h4>Create Storage</h4>
                     </div>
                     <div class="col-12">
                          {{-- Supplier Form--}}
@@ -17,28 +17,28 @@
 
                             {{-- Supplier Input Field --}}
                             <div class="col-md-12">
-                                <label for="supplier" class="form-label">Name</label>
+                                <label for="storage" class="form-label">Name</label>
                                 <input type="text" id="storage" class="form-control" name="name" value="{{ old('name') }}" required>
                             </div> 
                             <div class="col-md-12">
-                                <label for="supplier" class="form-label">Building</label>
+                                <label for="storage" class="form-label">Building</label>
                                 <input type="text" id="storage" class="form-control" name="building" value="{{ old('building') }}" required>
                             </div> 
                             <div class="col-md-12">
-                                <label for="supplier" class="form-label">Floor</label>
+                                <label for="storage" class="form-label">Floor</label>
                                 <input type="text" id="storage" class="form-control" name="floor" value="{{ old('floor') }}" required>
                             </div> 
                             <div class="col-md-12">
-                                <label for="supplier" class="form-label">Room</label>
+                                <label for="storage" class="form-label">Room</label>
                                 <input type="text" id="storage" class="form-control" name="room" value="{{ old('room') }}" required>
                             </div> 
                             <div class="col-md-12">
-                                <label for="supplier" class="form-label">Cabinet</label>
+                                <label for="storage" class="form-label">Cabinet</label>
                                 <input type="text" id="storage" class="form-control" name="cabinet" value="{{ old('cabinet') }}" required>
                             </div> 
                             
                             
-                            {{-- End Supplier Input Field --}}
+                            {{-- End Storage Input Field --}}
                         
                             {{-- Submit and Cancel Button --}}
                             <div class="col-12">

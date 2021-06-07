@@ -1,14 +1,14 @@
-@php $active = 'storage' @endphp
+@php $active = 'distribution' @endphp
 @extends('layout.main')
-@section('title', 'storage')
+@section('title', 'distribution')
 @section('content')
 <div class="container">
     <div class="row p-5">
         <div class="col-10">
-            <h1>Storage</h1>
+            <h1>Distribution</h1>
         </div>
         <div class="col-2">
-            <a href="/storage/create" class="btn btn-success">Add New</a>
+            <a href="/distribution/create" class="btn btn-success">Add New</a>
         </div>
                     <div class="col-12">
                         <hr>    
@@ -25,15 +25,17 @@
                                 {{ session('success')}}
                             </div>
                         @endif
-                        <table class="table">
-                            <thead>
+                        <div class="col-12 mt-5">
+                            <table class="table">
+                                <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Building</th> 
-                                    <th>Floor</th>
-                                    <th>Room</th> 
-                                    <th>Cabinet</th>
-                                    <th>Action</th> 
+                                    <th>Requestor Name</th>
+                                    <th>Requestor Contact</th> 
+                                    <th>Purpose</th>
+                                    <th>Asset id</th> 
+                                    <th>Quantity</th>
+                                    <th>Status</th> 
+                                    <th>Action</th>
                                 </tr>
                            
                             </thead>
@@ -41,15 +43,17 @@
                                 <!--$x is the -->
                                 @foreach($data as $x)
                                     <tr> 
-                                        <td>{{$x->name}}</td> 
-                                        <td>{{$x->building}}</td>
-                                        <td>{{$x->floor}}</td> 
-                                        <td>{{$x->room}}</td>
-                                        <td>{{$x->cabinet}}</td> 
+                                        <td>{{$x->requestor_name}}</td> 
+                                        <td>{{$x->requestor_contact}}</td>
+                                        <td>{{$x->purpose}}</td> 
+                                        <td>{{$x->asset_id}}</td>
+                                        <td>{{$x->quantity}}</td> 
+                                        <td>{{$x->status}}</td>
+                                      
                                       
                                         <td style="width: 200px;">
-                                            <a href="{{ URL::route('storage.edit', $x->id) }}" class="btn btn-success btn-sm">Update</a> 
-                                            <a href="{{ URL::route('storage.delete', $x->id) }}" class="btn btn-danger btn-sm">Delete</a>      
+                                            <a href="{{ URL::route('distribution.edit', $x->id) }}" class="btn btn-success btn-sm">Update</a> 
+                                            <a href="{{ URL::route('distribution.delete', $x->id) }}" class="btn btn-danger btn-sm">Delete</a>      
                                         </td> 
                                     </tr>
                                 @endforeach
