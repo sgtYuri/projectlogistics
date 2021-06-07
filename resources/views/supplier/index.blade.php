@@ -2,19 +2,14 @@
 @extends('layout.main')
 @section('title', 'supplier')
 @section('content')
-    <div class="row align-items-center"> 
-        <div class="col-12 mt-5">
-            <div class="card">
-                <div class="card-body row p-5"> 
-
-                    <div class="col-10">
-                        <h4>
-                            All Supplier info
-                        </h4>
-                    </div>
-                    <div class="col-2 text-end"> 
-                        <a href="/supplier/create" class="btn btn-dark pull-right">Create</a>
-                    </div> 
+<div class="container">
+    <div class="row p-5">
+        <div class="col-10">
+            <h1>Supplier</h1>
+        </div>
+        <div class="col-2">
+            <a href="/supplier/create" class="btn btn-success">Add New</a>
+        </div>
                     <div class="col-12">
                         <hr>    
                     </div>
@@ -30,8 +25,9 @@
                                 {{ session('success')}}
                             </div>
                         @endif
-                        <table class="table">
-                            <thead>
+                        <div class="col-12 mt-5">
+                            <table class="table">
+                                <thead>
                                 <tr>
                                     <th>Name</th>
                                     <th>Building</th> 
