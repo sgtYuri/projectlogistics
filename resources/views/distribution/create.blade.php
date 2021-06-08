@@ -38,14 +38,14 @@
                             </div>  
                             <div class="col-md-12">
                                 <label for="distribution" class="form-label">Status</label>
-                                <select class="form-control" name="status" value="{{ old('status') }}" required>
-                                       <option selected>choose....</option>
+                                <select class="form-control" name="status" value="{{ old ('status') }}" required>
+                                    <option selected>choose....</option>
                                        <option>Proccesing</option>
                                        <option>Declined</option>
-                                       <option>Destribution</option>
-                                    </select>
-                                 </div>
-                            </div> 
+                                       <option>Destributed</option>
+                                 </select>
+                         </div> 
+                        </div> 
                             
                             
                             {{-- End distribution Input Field --}}

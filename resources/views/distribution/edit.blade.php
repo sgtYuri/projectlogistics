@@ -38,8 +38,14 @@
                             </div> 
                             <div class="col-md-12">
                                 <label for="distribution" class="form-label">Status</label>
-                                <input type="text" id="distribution" class="form-control" name="status" required value="{{ $data->status }}">
-                            </div> 
+                                <select class="form-control" name="status" value="{{ old('status') }}" required>
+                                    <option selected>choose....</option>
+                                    <option>Proccesing</option>
+                                       <option>Declined</option>
+                                       <option>Destributed</option>
+                                 </select>
+                         </div> 
+                        </div> 
                             
                             
                             

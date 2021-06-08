@@ -1,14 +1,14 @@
-@php $active = 'assets' @endphp
+@php $active = 'delivery' @endphp
 @extends('layout.main')
-@section('title', 'assets')
+@section('title', 'Create Delivery')
 @section('content')
 <div class="container">
     <div class="row p-5">
         <div class="col-10">
-            <h1>Assets</h1>
+            <h1>Delivery</h1>
         </div>
         <div class="col-2">
-            <a href="/assets/create" class="btn btn-success">Add New</a>
+            <a href="/delivery/create" class="btn btn-success">Add New</a>
         </div>
                     <div class="col-12">
                         <hr>    
@@ -29,12 +29,10 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Description</th> 
-                                    <th>Category</th>
-                                    <th>Supplier id</th> 
-                                    <th>Storage id</th>
-                                    <th>Total Stocks</th> 
+                                    <th>Distribution id</th>
+                                    <th>Transportation id</th> 
+                                    <th>Date Distributed</th>
+                                    <th>Status</th> 
                                     <th>Action</th>
                                 </tr>
                            
@@ -43,17 +41,16 @@
                                 <!--$x is the -->
                                 @foreach($data as $x)
                                     <tr> 
-                                        <td>{{$x->name}}</td> 
-                                        <td>{{$x->description}}</td>
-                                        <td>{{$x->category}}</td> 
-                                        <td>{{$x->supplier_id}}</td>
-                                        <td>{{$x->storage_id}}</td> 
-                                        <td>{{$x->total_stocks}}</td>
+                                        <td>{{$x->distribution_id}}</td> 
+                                        <td>{{$x->transportation_id}}</td>
+                                        <td>{{$x->date_distributed}}</td> 
+                                        <td>{{$x->status}}</td>
+                                       
                                       
                                       
                                         <td style="width: 200px;">
-                                            <a href="{{ URL::route('assets.edit', $x->id) }}" class="btn btn-success btn-sm">Update</a> 
-                                            <a href="{{ URL::route('assets.delete', $x->id) }}" class="btn btn-danger btn-sm">Delete</a>      
+                                            <a href="{{ URL::route('delivery.edit', $x->id) }}" class="btn btn-success btn-sm">Update</a> 
+                                            <a href="{{ URL::route('delivery.delete', $x->id) }}" class="btn btn-danger btn-sm">Delete</a>      
                                         </td> 
                                     </tr>
                                 @endforeach
