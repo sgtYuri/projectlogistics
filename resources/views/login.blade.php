@@ -24,8 +24,7 @@
                         Log in to your Account
                             <br>
                             <br>
-                            <form class="text-start">
-                            <form method="post" action="{{ URL::route('app.login.verify') }}" class ="col-4">
+                            <form  class="text-start" method="post" action="{{ URL::route('app.login.verify') }}" class ="col-4">
                                 @csrf
                                  @if(session('error'))
                                 <div class="mb-3">
@@ -37,19 +36,19 @@
                             
                                 <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
                                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                 </div>
                                 <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="password" class="form-control" id="exampleInputPassword1" name="password">
                                 </div>
                              
                                 <a href="{{ URL::route('app.registration') }}"><h5>Create Account</h5></a>
                                 <br>
                                 <br>
                                  <div class="d-grid gap-2">
-                                    <button class="btn btn-primary rounded-pill" type="button">Log In</button>
+                                    <button class="btn btn-primary rounded-pill" type="submit">Log In</button>
                                  </div>
                             </form>
         

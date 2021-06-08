@@ -10,7 +10,7 @@ class Delivery extends Model
     use HasFactory;
         
     //table name
-    protected $table = "delivery";
+    protected $table = "deliveries";
     //fields
      protected $fillable = [
 
