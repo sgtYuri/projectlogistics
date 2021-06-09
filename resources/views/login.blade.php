@@ -48,7 +48,7 @@
                                 <br>
                                 <br>
                                  <div class="d-grid gap-2">
-                                    <button class="btn btn-primary rounded-pill" type="submit">Log In</button>
+                                    <a href="/supplier" class="btn btn-primary">login</a>
                                  </div>
                             </form>
         

@@ -49,8 +49,15 @@
                                       
                                       
                                         <td style="width: 200px;">
-                                            <a href="{{ URL::route('delivery.edit', $x->id) }}" class="btn btn-success btn-sm">Update</a> 
-                                            <a href="{{ URL::route('delivery.delete', $x->id) }}" class="btn btn-danger btn-sm">Delete</a>      
+                                            <div class="btn-group" role="group">
+                                                <button id="btnGroupDrop1" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Action
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                                  <li><a class="dropdown-item" href="{{ URL::route('delivery.edit', $x->id) }}">Update</a></li>
+                                                  <li><a class="dropdown-item" href="{{ URL::route('delivery.delete', $x->id) }}">Delete</a></li>
+                                                </ul>
+                                            </div>
                                         </td> 
                                     </tr>
                                 @endforeach

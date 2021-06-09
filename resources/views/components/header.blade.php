@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-success">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Logistics</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -35,10 +35,13 @@
               Returns </a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <nav>
+        <a href="/app.logout" class=" text-white d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://variety.com/wp-content/uploads/2014/11/stand-by-me-doraemon.jpg?w=681&h=383&crop=1" alt="" width="32" height="32" class="rounded-circle me-2">
+          <strong>Yhuri</strong>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+          <li><a class="dropdown-item" href="{{ URL::route('app.logout') }}">Sign out</a></li>
+      </ul>
+    </a>
       </div>
-    </div>
   </nav>
