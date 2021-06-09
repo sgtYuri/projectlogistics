@@ -48,7 +48,7 @@
                                 <br>
                                 <br>
                                  <div class="d-grid gap-2">
-                                    <a href="/supplier" class="btn btn-primary">login</a>
+                                    <button class="btn btn-primary" type="submit">login</button>
                                  </div>
                             </form>
         
