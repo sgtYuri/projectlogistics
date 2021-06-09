@@ -50,10 +50,10 @@ class AuthController extends Controller
          */
         //upload
         //putFile('folder_name',fileObject)
-        $filename =Storage::disk('public')->putFile('avatar', $this->request->file);
+        // $filename =Storage::disk('public')->putFile('avatar', $this->request->file);
 
         $this->request->merge([
-            'avatar' => $filename,
+            // 'avatar' => $filename,
             //encrpt password
             'password' =>bcrypt($this->request->password)
         ]);

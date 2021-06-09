@@ -15,7 +15,8 @@ class CreateReturnsTable extends Migration
     {
         Schema::create('returns', function (Blueprint $table) {
             $table->id();
-            $table->integer('asset_id');
+            $table->unsignedBigInteger('asset_id')->index();
+            $table->foreign('asset_id')->references('id')->on('assets');
             $table->string('returned_by');
             $table->integer('returned_by_contact');
             $table->integer('quantity');

@@ -18,7 +18,8 @@ class CreateDistributionTable extends Migration
             $table->string('requestor_name');
             $table->integer('requestor_contact');
             $table->string('purpose');
-            $table->integer('asset_id');
+            $table->unsignedBigInteger('asset_id')->index();
+            $table->foreign('asset_id')->references('id')->on('assets');
             $table->integer('quantity');
             $table->enum('status' ,[
                 'processing' , 'declined' , 'distributed'

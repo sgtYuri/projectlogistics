@@ -18,8 +18,10 @@ class CreateAssetsTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('category');
-            $table->integer('supplier_id');
-            $table->integer('storage_id');
+            $table->unsignedBigInteger('supplier_id')->index();
+            $table->foreign('supplier_id')->references('id')->on('supplier');
+            $table->unsignedBigInteger('storage_id')->index();
+            $table->foreign('storage_id')->references('id')->on('storage');
             $table->string('total_stocks');
             $table->softDeletes();
             $table->timestamps();
