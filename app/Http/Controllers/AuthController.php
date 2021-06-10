@@ -36,7 +36,7 @@ class AuthController extends Controller
 
         if($login){
             //redirect to homepage
-          return Redirect::route('app');
+          return Redirect::route('supplier');
         }
        return redirect::route('app.login')
                     ->withError('Invalid User Credentials');
